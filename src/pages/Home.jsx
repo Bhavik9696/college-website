@@ -14,7 +14,7 @@ const Home = () => {
         <p className="mb-6 font-thin from-neutral-300 md:text-lg ">
           Welcome to BBCD College, where education meets excellence and dreams take flight! At BBCD College, we are committed to nurturing bright minds through a blend of quality teaching, innovative learning, and a vibrant campus life. Our dedicated faculty and state-of-the-art facilities provide the perfect environment for students to explore their passions, develop critical skills, and prepare for successful careers. Whether you are stepping into your academic journey or advancing your expertise, BBCD College is your gateway to endless opportunities, personal growth, and lifelong friendships. Join us and be a part of a community that inspires, empowers, and transforms.
         </p>
-         <img src={clgimg} alt="clgimg" className="rounded-xl mb-5 sm:h-96  md:ml-40 xl:ml-96 "/>
+         <img src={clgimg} alt="clgimg" className="rounded-xl mb-5 sm:h-96  md:ml-40 xl:ml-96 shadow-lg shadow-blue-500/90"/>
 
 
         <section className="mt-10">

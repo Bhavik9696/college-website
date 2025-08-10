@@ -53,11 +53,11 @@ const ContactUS = () => {
   };
 
   return (
-    <div className="bg-[#0a192f] text-white min-h-screen flex items-center justify-center p-6">
+    <div className="bg-gray-900 text-white min-h-screen flex items-center justify-center p-6">
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="w-full max-w-4xl space-y-6 p-8 rounded-xl shadow-xl bg-[#0a192f]"
+        className="w-full max-w-4xl space-y-6 p-8 rounded-xl shadow-xl bg-gray-900"
       >
         <h2 className="text-3xl font-bold mb-6">Let's Connect</h2>
 
