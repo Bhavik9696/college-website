@@ -1,62 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../assets/logo.jpg';
+import clgimg from '../assets/clgimg.png';
 
 
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-900 text-white">
-      <header className="p-5 bg-blue-700 text-white  flex gap-6 md:pl-16">
-        <img src={logo}
-          alt="logo" width={70} className="rounded-full bg-p"
-        />
-        <h1 className="text-xl font-bold font-serif sm:text-2xl md:mt-6 sm:mt-4 md:text-3xl ">
-          BBCD College Of Engineering and Technology
-        </h1>
-      </header>
 
-      <main className="flex-grow container mx-auto px-4 pt-4">
-        <h1 className="text-2xl font-semibold mb-1 font-mono sm:pt-4 ">
+      <main className="flex-grow container mx-auto px-4 pt-4 ">
+        <h1 className="text-2xl font-semibold mb-1 font-mono sm:pt-4 text-orange-400 ">
           Welcome to BBCD College!
         </h1>
-        <p className="mb-6">
+        <p className="mb-6 font-thin from-neutral-300 md:text-lg ">
           Welcome to BBCD College, where education meets excellence and dreams take flight! At BBCD College, we are committed to nurturing bright minds through a blend of quality teaching, innovative learning, and a vibrant campus life. Our dedicated faculty and state-of-the-art facilities provide the perfect environment for students to explore their passions, develop critical skills, and prepare for successful careers. Whether you are stepping into your academic journey or advancing your expertise, BBCD College is your gateway to endless opportunities, personal growth, and lifelong friendships. Join us and be a part of a community that inspires, empowers, and transforms.
         </p>
+         <img src={clgimg} alt="clgimg" className="rounded-xl mb-5 sm:h-96  md:ml-40 xl:ml-96 "/>
 
-        <div className="flex gap-4">
-          <Link
-            to="/courses"
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-          >
-            View Courses
-          </Link>
-          <Link
-            to="/admissions"
-            className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
-          >
-            Admissions
-          </Link>
-          <Link
-            to="/faculty"
-            className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition"
-          >
-            Meet Faculty
-          </Link>
-        </div>
 
         <section className="mt-10">
-          <h3 className="text-xl font-semibold mb-2">Latest News</h3>
-          <ul className="list-disc list-inside text-gray-600">
-            <li>Fall semester admissions open from Aug 1.</li>
-            <li>Guest lecture on AI by Dr. Smith on Aug 15.</li>
-            <li>Campus festival scheduled for Sept 10-12.</li>
+          <h3 className="text-3xl font-semibold mb-2 text-orange-500">Latest News</h3>
+          <ul className="list-disc list-inside  font-thin from-neutral-300 mb-5 text-sm flex flex-col gap-3 md:flex-row md:text-lg">
+            <li>1. AI Workshop Series Kicks Off This Month!
+Our Department of Computer Science is organizing a hands-on workshop on Artificial Intelligence and Machine Learning starting August 20th. Students will get to work with real datasets and build intelligent models.</li>
+            <li>2.New State-of-the-Art Robotics Lab Inaugurated
+The college has launched a new robotics research lab equipped with cutting-edge tools and 3D printers, fostering innovation in automation and AI-driven robotics.</li>
+            <li>3. Internship Opportunities with Top Tech Companies
+Several companies including Infosys, TCS, and Google have opened internship applications exclusively for our engineering students. Apply by September 5th for summer internships.
+
+</li>
           </ul>
         </section>
       </main>
-
-      <footer className="bg-gray-800 text-gray-200 p-4 text-center">
-        Contact us: info@awesomecollege.edu | +1 (555) 123-4567
-      </footer>
     </div>
   );
 };
