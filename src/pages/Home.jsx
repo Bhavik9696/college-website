@@ -5,9 +5,10 @@ import clgimg from '../assets/clgimg.png';
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-900 text-white">
+    <div className="min-h-screen flex flex-col dark:bg-gray-900 dark:text-white transition-colors">
+      
 
-      <main className="flex-grow container mx-auto px-4 pt-4 ">
+      <main className="flex-grow container mx-auto px-4 pt-4 dark:bg-white-900 dark:text-white transition-colors">
         <h1 className="text-2xl font-semibold mb-1 font-mono sm:pt-4 text-orange-400 ">
           Welcome to BBCD College!
         </h1>

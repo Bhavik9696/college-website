@@ -53,11 +53,11 @@ const ContactUS = () => {
   };
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen flex items-center justify-center p-6">
+    <div className="bg-white text-white min-h-screen flex items-center justify-center p-6 dark:bg-gray-900">
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="w-full max-w-4xl space-y-6 p-8 rounded-xl shadow-xl bg-gray-900"
+        className="w-full max-w-4xl space-y-6 p-8 rounded-xl shadow-xl bg-blue-200  text-black dark:bg-gray-900 dark:text-white border-2 dark:border-gray-600" 
       >
         <h2 className="text-3xl font-bold mb-6">Let's Connect</h2>
 
@@ -67,7 +67,7 @@ const ContactUS = () => {
             <input
               type="text"
               name="name"
-              className="w-full p-3 rounded bg-gray-800 border border-gray-600 text-white"
+              className="w-full p-3 rounded  border border-gray-600 text-black bg-white-800 dark:bg-gray-800 "
               value={formData.name}
               onChange={handleChange}
               required
@@ -79,7 +79,7 @@ const ContactUS = () => {
             <input
               type="email"
               name="email"
-              className="w-full p-3 rounded bg-gray-800 border border-gray-600"
+              className="w-full p-3 rounded  border border-gray-600 text-black bg-white-800 dark:bg-gray-800"
               value={formData.email}
               onChange={handleChange}
               required
@@ -90,7 +90,7 @@ const ContactUS = () => {
             <label className="block mb-1">Subject *</label>
             <select
               name="subject"
-              className="w-full p-3 rounded bg-gray-800 border border-gray-600"
+              className="w-full p-3 rounded  border border-gray-600 text-black bg-white-800 dark:bg-gray-800"
               value={formData.subject}
               onChange={handleChange}
               required
@@ -106,7 +106,7 @@ const ContactUS = () => {
             <label className="block mb-1">Message *</label>
             <textarea
               name="message"
-              className="w-full p-3 h-32 rounded bg-gray-800 border border-gray-600"
+              className="w-full p-3 h-32 rounded  border border-gray-600 text-black bg-white-800 dark:bg-gray-800"
               value={formData.message}
               onChange={handleChange}
               required
@@ -145,7 +145,7 @@ const ContactUS = () => {
           <input
             type="text"
             name="heardAbout"
-            className="w-full p-3 rounded bg-gray-800 border border-gray-600"
+            className="w-full p-3 rounded  border border-gray-600 text-black bg-white-800 dark:bg-gray-800"
             value={formData.heardAbout}
             onChange={handleChange}
           />

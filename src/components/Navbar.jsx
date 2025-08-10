@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import logo from "../assets/logo.jpg";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useTheme } from "../context/ThemeContext";
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+    const { theme, toggleTheme } = useTheme();
 
   return (
     <div className="min-h-full">
@@ -68,6 +71,12 @@ function Navbar() {
           >
             Contact-Us
           </NavLink>
+          <button
+        onClick={toggleTheme}
+        className="ml-4 px-3 py-1 rounded bg-gray-200 text-black dark:bg-gray-800 dark:text-white transition"
+      >
+        {theme === "dark" ? "☀️" : "🌙"}
+      </button>
         </div>
 
         {/* Mobile Hamburger */}
@@ -136,6 +145,12 @@ function Navbar() {
           >
             Contact-Us
           </NavLink>
+          <button
+        onClick={toggleTheme}
+        className="ml-4 px-3 py-1 rounded bg-gray-200 text-black dark:bg-gray-800 dark:text-white transition"
+      >
+        {theme === "dark" ? "☀️" : "🌙"}
+      </button>
         </div>
       )}
     </div>

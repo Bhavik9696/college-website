@@ -19,14 +19,14 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center px-6 py-10">
-      <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-8">
+    <div className="min-h-screen bg-white text-white flex items-center justify-center px-6 py-10 dark:bg-gray-900 dark:text-white transition-colors ">
+      <div className="w-full max-w-md bg-blue-200 rounded-lg shadow-lg p-8 border-2 border-gray-600 text-black  dark:text-white dark:bg-gray-900 transition-colors">
         <h1 className="text-3xl font-bold mb-6 text-orange-400 font-serif text-center">
           Register at BBCD College
         </h1>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="fullName" className="block mb-2 font-semibold">
+            <label htmlFor="fullName" className="block mb-2 font-semibold ">
               Full Name
             </label>
             <input
