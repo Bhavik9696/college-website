@@ -1,12 +1,27 @@
-# React + Vite
+# BBCD College Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React website for **BBCD College of Engineering and Technology** featuring multiple pages such as Home, About Us, Admissions, Register, and Contact Us with email sending functionality powered by EmailJS. Styled with Tailwind CSS for modern UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Responsive layout with Tailwind CSS
+- Navigation with React Router and active link highlighting
+- Contact Us form integrated with EmailJS for sending emails directly from the client
+- Form validation and user feedback on submission
+- Sticky Navbar and consistent Footer across pages
+- Multi-page React application structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technologies Used
+
+- React 18+
+- React Router DOM (v6+)
+- Tailwind CSS
+- EmailJS (for email sending)
+- JavaScript (ES6+)
+
+---
+
