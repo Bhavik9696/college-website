@@ -13,7 +13,12 @@ export default function Login() {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/profile");
+      if(email==="bbcd@gmail.com" && password==="bbcd@123"){
+        navigate("/admin");
+      }else{
+        navigate("/student");
+
+      }
     } catch (error) {
       console.error(error);
       alert("Invalid email or password.");
