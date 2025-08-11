@@ -10,8 +10,8 @@ function Navbar() {
     const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="min-h-full">
-      <header className=" sticky top-0 p-5 bg-blue-700 text-white flex justify-between items-center md:pl-16 lg:p-3">
+    <div>
+      <header className="p-5 bg-blue-700 text-white flex justify-between items-center md:pl-16 lg:p-3">
         <div className="flex items-center gap-4">
           <img src={logo} alt="logo" width={70} className="rounded-full" />
           <h1 className="text-xl font-bold font-serif sm:text-2xl md:mt-2 md:text-3xl lg:mt-0">
@@ -26,7 +26,7 @@ function Navbar() {
             className={({ isActive }) =>
               isActive
                 ? "text-orange-500 rounded hover:bg-blue-600 transition lg:ml-9"
-                : "text-white rounded hover:bg-blue-600 transition lg:ml-9"
+                : "text-white rounded hover:bg-blue-600 transition lg:ml-9 "
             }
           >
             Home
