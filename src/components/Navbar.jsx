@@ -52,14 +52,24 @@ function Navbar() {
             Admissions
           </NavLink>
           <NavLink
-            to="/register"
+            to="/Login"
             className={({ isActive }) =>
               isActive
                 ? "text-orange-500 rounded hover:bg-blue-600 transition lg:ml-9"
                 : "text-white rounded hover:bg-blue-600 transition lg:ml-9"
             }
           >
-            Register
+            Login
+          </NavLink>
+          <NavLink
+            to="/signup"
+            className={({ isActive }) =>
+              isActive
+                ? "text-orange-500 rounded hover:bg-blue-600 transition lg:ml-6"
+                : "text-white rounded hover:bg-blue-600 transition lg:ml-9"
+            }
+          >
+           signup
           </NavLink>
           <NavLink
             to="/contact"
@@ -124,7 +134,17 @@ function Navbar() {
             Admissions
           </NavLink>
           <NavLink
-            to="/register"
+            to="/signup"
+            className={({ isActive }) =>
+              isActive
+                ? "text-orange-500 rounded  transition lg:ml-6"
+                : "text-white rounded hover:bg-blue-600 transition lg:ml-9"
+            }
+          >
+           signup
+          </NavLink>
+          <NavLink
+            to="/Login"
             onClick={() => setIsOpen(false)}
             className={({ isActive }) =>
               isActive
@@ -132,7 +152,7 @@ function Navbar() {
                 : "text-white"
             }
           >
-            Register
+            Login
           </NavLink>
           <NavLink
             to="/contact"

@@ -1,52 +1,47 @@
 #app {
   height: 100%;
 }
+
 html,
 body {
   position: relative;
   height: 100%;
-}
-
-body {
-  background: #000;
-  font-family:
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
-  font-size: 14px;
-  color: #fff;
   margin: 0;
   padding: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: black;
 }
 
+/* Center the swiper and limit its width */
 .swiper {
-  
+  --swiper-navigation-sides-offset: 16px; /* bring arrows closer */
+  max-width: 1200px; /* adjust as needed */
+  margin: 0 auto;
 }
 
+/* Slides */
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  
-
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Responsive images */
 .swiper-slide img {
-  display: block;
-  object-fit: cover;
+   /* keep from overflowing small screens */
+  object-fit: contain; /* show full image without cropping */
+  border-radius: 8px;
 }
 
+/* Autoplay progress indicator */
 .autoplay-progress {
   position: absolute;
   right: 16px;
   bottom: 16px;
   z-index: 10;
-  width: 48px;
-  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,3 +62,5 @@ body {
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
+
+
