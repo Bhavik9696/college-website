@@ -78,7 +78,7 @@ const Home = () => {
 
         <section className="mt-10">
           <h3 className="text-3xl font-semibold mb-2 text-orange-500">Latest News</h3>
-          <ul className="list-disc list-inside  from-neutral-300 mb-5 text-sm flex flex-col gap-3 md:flex-row md:text-lg">
+          <ul className="list-disc list-inside  from-neutral-300 mb-5 text-sm flex flex-col gap-3 md:flex-row md:text-lg xl:gap-8">
             <li>1. AI Workshop Series Kicks Off This Month!
 Our Department of Computer Science is organizing a hands-on workshop on Artificial Intelligence and Machine Learning starting August 20th. Students will get to work with real datasets and build intelligent models.</li>
             <li>2.New State-of-the-Art Robotics Lab Inaugurated

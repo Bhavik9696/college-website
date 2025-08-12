@@ -7,7 +7,10 @@ function AddStudent() {
   const [email, setEmail] = useState('');
   const [year, setYear] = useState('');
   const [imgurl, setImgurl] = useState('');
-  const [smsg, setSmsg] = useState('');
+  const [msg, setMsg] = useState('');
+  const [err, setErr] = useState('');
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,35 +22,39 @@ function AddStudent() {
         year: Number(year),
         imgurl,
       });
-      alert("Student added successfully!");
-      setSmsg('Student added successfully!')
+      setMsg("✅ Student added successfully!",name)
       setName('');
       setEmail('');
       setYear('');
       setImgurl('');
     } catch (error) {
-      alert("Error adding student: " + error.message);
-      setSmsg("Error adding student: " + error.message)
+      setErr("❌ Error adding student: " + error.message)
+    
     }
   };
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 dark:text-white">
-      <h1 className='text-white'>{smsg}</h1>
+      
     <form 
       onSubmit={handleSubmit} 
       className="max-w-md mx-auto  p-6 bg-blue-200 rounded-lg shadow-md flex flex-col gap-4 dark:bg-gray-900 border-2 border-gray-500 dark:text-black"
     >
+      <h1 className='text-white bg-green-500'>{msg}</h1>
+      <h1 className='text-white bg-red-600'>{err}</h1>
       <input
         value={name}
         onChange={e => setName(e.target.value)}
         placeholder="Name"
-        className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 w-96 "
+        required
+        className="border border-gray-300 rounded px-3 py-2 focus:outline-none 
+        focus:ring-2 focus:ring-blue-500 w-96 "
       />
       <input
         value={email}
         onChange={e => setEmail(e.target.value)}
         placeholder="Email"
+        required
         className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <input
@@ -55,12 +62,14 @@ function AddStudent() {
         onChange={e => setYear(e.target.value)}
         placeholder="Year"
         type="number"
+        required
         className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
        <input
         value={imgurl}
         onChange={e => setImgurl(e.target.value)}
         placeholder="imgUrl"
+        required
         className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <button
