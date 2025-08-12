@@ -40,14 +40,16 @@ export default function StudentDashboard() {
   if (error) return <p className="text-red-600">{error}</p>;
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded shadow-md">
-      <h2 className="text-2xl font-bold mb-4">Your Profile</h2>
-      <p><strong>Name:</strong> {studentData.name}</p>
-      <p><strong>Email:</strong> {studentData.email}</p>
-      <p><strong>Year:</strong> {studentData.year}</p>
+    <div className="w-full h-[100vh] bg-white rounded shadow-md dark:bg-gray-900 dark:text-white flex flex-col justify-center ">
+    <div className="max-w-md mx-auto  bg-blue-200 rounded shadow-md dark:bg-gray-900 dark:text-white border-2 p-9">
+      <h2 className="text-4xl font-bold mb-4 text-orange-500">Your Profile</h2>
+      <p className="text-xl"><strong>Name:</strong> {studentData.name}</p>
+      <p className="text-xl"><strong>Email:</strong> {studentData.email}</p>
+      <p className="text-xl"><strong>Year:</strong> {studentData.year}</p>
       {studentData.imgurl && (
         <img src={studentData.imgurl} alt="Profile" className="mt-4 rounded w-40 h-40 object-cover" />
       )}
+    </div>
     </div>
   );
 }

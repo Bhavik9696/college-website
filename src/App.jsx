@@ -10,6 +10,7 @@ import AdminDashboard from "./pages/AdminDashboard";
 import StudentDashboard from "./pages/StudentDashboard";
 import Signup from "./pages/Signup";
 import AddStudent from "./pages/AddStudent";
+import StudentList from "./pages/StudentList";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/student" element={<StudentDashboard />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/addStudent" element={<AddStudent />} />
+          <Route path="/StudentList" element={<StudentList />} />
         </Routes>
       </main>
 
