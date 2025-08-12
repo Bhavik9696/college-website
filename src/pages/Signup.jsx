@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { setDoc, doc } from 'firebase/firestore';
 import { auth, db } from '../firebase/firebase'; 
+import { Link } from "react-router-dom";
+
 
 function Signup() {
   const [email, setEmail] = useState('');
@@ -65,8 +67,13 @@ function Signup() {
         Sign Up
       </button>
     </form>
-    <button className='bg-orange-600 p-2 rounded-xl font-bold text-lg'><a href="AddStudent">Add Students Details</a></button>
-    <button className='bg-orange-600 p-2 rounded-xl font-bold text-lg'><a href="StudentList">View All Students Details</a></button>
+    <button className='bg-orange-600 p-2 rounded-xl font-bold text-lg'>
+  <Link to="/AddStudent">Add Student Details</Link>
+</button>
+
+<button className='bg-orange-600 p-2 rounded-xl font-bold text-lg'>
+  <Link to="/StudentList">View All Student Details</Link>
+</button>
     </div>
     
   );

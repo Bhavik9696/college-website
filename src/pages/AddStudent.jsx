@@ -78,6 +78,7 @@ function AddStudent() {
       >
         Add Student
       </button>
+      
     </form>
     </div>
   );
