@@ -14,10 +14,9 @@ export default function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       if(email==="bbcd@gmail.com" && password==="bbcd@123"){
-        navigate("/admin");
+        navigate("/signup");
       }else{
         navigate("/student");
-
       }
     } catch (error) {
       console.error(error);

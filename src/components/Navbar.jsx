@@ -62,16 +62,6 @@ function Navbar() {
             Login
           </NavLink>
           <NavLink
-            to="/signup"
-            className={({ isActive }) =>
-              isActive
-                ? "text-orange-500 rounded hover:bg-blue-600 transition lg:ml-6"
-                : "text-white rounded hover:bg-blue-600 transition lg:ml-9"
-            }
-          >
-           signup
-          </NavLink>
-          <NavLink
             to="/contact"
             className={({ isActive }) =>
               isActive
@@ -132,16 +122,6 @@ function Navbar() {
             }
           >
             Admissions
-          </NavLink>
-          <NavLink
-            to="/signup"
-            className={({ isActive }) =>
-              isActive
-                ? "text-orange-500 rounded  transition lg:ml-6"
-                : "text-white rounded hover:bg-blue-600 transition lg:ml-9"
-            }
-          >
-           signup
           </NavLink>
           <NavLink
             to="/Login"

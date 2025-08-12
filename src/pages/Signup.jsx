@@ -12,7 +12,7 @@ function Signup() {
 
     try {
       // Step 1: Create user in Firebase Auth
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password)
       const uid = userCredential.user.uid;
 
       // Step 2: Store extra details in Firestore
