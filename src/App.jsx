@@ -9,7 +9,7 @@ import ContactUs from "./pages/ContactUs";
 import AdminDashboard from "./pages/AdminDashboard";
 import StudentDashboard from "./pages/StudentDashboard";
 import Signup from "./pages/Signup";
-
+import AddStudent from "./pages/AddStudent";
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/student" element={<StudentDashboard />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/addStudent" element={<AddStudent />} />
         </Routes>
       </main>
 

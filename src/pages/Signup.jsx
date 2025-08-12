@@ -17,6 +17,11 @@ function Signup() {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password)
       const uid = userCredential.user.uid;
       setMsg("✅ Signup successful!");
+       await setDoc(doc(db, "users", uid), {
+    email,
+    createdAt: new Date().toISOString(),
+    // Add other fields if you want, e.g. name, dob, etc.
+  });
     } catch (error) {
       console.error("Error during signup:", error.message);
       seterrMsg("❌ " + error.message);
