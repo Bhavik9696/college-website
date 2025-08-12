@@ -34,7 +34,7 @@ function Signup() {
     <h1 className='mb-10 bg-red-400 text-lg'>{errmsg}</h1>
     <form
       onSubmit={handleSignup}
-      className="bg-blue-200 mb-40 p-8 rounded-lg shadow-md max-w-md   flex flex-col gap-4 dark:bg-gray-900 dark:text-white dark:border-2 dark:border-gray-400"
+      className="bg-blue-200 mb-20 p-8 rounded-lg shadow-md max-w-md   flex flex-col gap-4 dark:bg-gray-900 dark:text-white dark:border-2 dark:border-gray-400"
     >
       <h2 className="text-2xl font-bold mb-4 text-center">Sign Up Any Users You Want</h2>
 
@@ -65,6 +65,7 @@ function Signup() {
         Sign Up
       </button>
     </form>
+    <button className='bg-orange-600 p-2 rounded-xl font-bold text-lg'><a href="AddStudent">Add Students Details</a></button>
     </div>
   );
 }

@@ -8,17 +8,15 @@ import clgimg5 from '../assets/clgimg5.jpg';
 import clgimg6 from '../assets/clgimg6.jpeg';
 import clgimg7 from '../assets/clgimg7.jpg';
 import { useRef, useState } from 'react';
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import '../App.css';
 
-// import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 

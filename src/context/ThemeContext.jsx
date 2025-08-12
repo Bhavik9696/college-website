@@ -28,5 +28,4 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
-// ✅ This is the missing export causing your error
 export const useTheme = () => useContext(ThemeContext);

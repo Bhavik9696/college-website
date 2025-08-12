@@ -17,14 +17,12 @@ export default function StudentDashboard() {
 
       try {
         const userEmail = auth.currentUser.email;
-        // Create query on "students" collection where "email" equals logged-in user's email
         const q = query(collection(db, "students"), where("email", "==", userEmail));
         const querySnapshot = await getDocs(q);
 
         if (querySnapshot.empty) {
           setError("No student data found for this user.");
         } else {
-          // Usually there will be one doc since emails are unique
           const docData = querySnapshot.docs[0].data();
           setStudentData(docData);
         }
