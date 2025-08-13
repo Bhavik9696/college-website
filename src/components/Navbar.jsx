@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.jpg";
+import logo1 from "../assets/logo1.png";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
@@ -13,7 +13,7 @@ function Navbar() {
     <div>
       <header className="p-5 bg-blue-700 text-white flex justify-between items-center md:pl-16 lg:p-3">
         <div className="flex items-center gap-4">
-          <img src={logo} alt="logo" width={70} className="rounded-full" />
+          <img src={logo1} alt="logo" width={70} className="rounded-full" />
           <h1 className="text-xl font-bold font-serif sm:text-2xl md:mt-2 md:text-3xl lg:mt-0">
             BBCD College Of Engineering and Technology
           </h1>

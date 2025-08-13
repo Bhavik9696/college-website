@@ -2,13 +2,13 @@ import React from "react";
 
 const Admissions = () => {
   return (
-    <div className="min-h-screen bg-white text-black px-6 py-10 md:px-20 lg:px-40 dark:bg-gray-900 dark:text-white transition-colors">
+    <div className="min-h-screen bg-white text-black px-6 py-10 md:px-20 lg:px-40 dark:bg-gray-900 dark:text-white transition-colors text-2xl">
 
       <h1 className="text-4xl font-bold mb-6 text-orange-400 font-serif">
         Admissions at BBCD College of Technology
       </h1>
 
-      <p className="mb-6 text-lg leading-relaxed font-light">
+      <p className="mb-6 text-xl leading-relaxed font-light">
         Welcome to the Admissions portal of BBCD College of Technology. We are
         dedicated to selecting the best and brightest minds to join our
         academic community. Our admissions process is designed to be
@@ -38,8 +38,8 @@ const Admissions = () => {
 
       <p className="mb-6 text-lg leading-relaxed font-light ">
         For any assistance or queries regarding admissions, please contact our
-        admissions office at <a href="mailto:admissions@bbcdtech.edu" className="text-orange-400 underline">admissions@bbcdtech.edu</a> or call
-        +91 98348 58463.
+        admissions office at <a href="mailto:admissions@bbcdtech.edu" className="text-orange-400 underline">bbcd@gmail.com</a> or call
+        +91 8431985374.
       </p>
     </div>
   );

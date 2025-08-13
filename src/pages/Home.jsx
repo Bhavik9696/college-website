@@ -35,11 +35,11 @@ const Home = () => {
     <div className="min-h-screen flex flex-col dark:bg-gray-900 dark:text-white transition-colors">
       
 
-      <main className="flex-grow container mx-auto px-4 pt-4 dark:bg-white-900 dark:text-white transition-colors">
-        <h1 className="text-2xl font-semibold mb-1 font-mono sm:pt-4 text-orange-400 ">
+      <main className="text-xl  flex-grow container mx-auto px-4 pt-4 dark:bg-white-900 dark:text-white transition-colors">
+        <h1 className="text-3xl font-semibold mb-1 font-mono sm:pt-4 text-orange-400 ">
           Welcome to BBCD College!
         </h1>
-        <p className="mb-6  from-neutral-300 md:text-lg ">
+        <p className="mb-6  from-neutral-300 ">
           Welcome to BBCD College, where education meets excellence and dreams take flight! At BBCD College, we are committed to nurturing bright minds through a blend of quality teaching, innovative learning, and a vibrant campus life. Our dedicated faculty and state-of-the-art facilities provide the perfect environment for students to explore their passions, develop critical skills, and prepare for successful careers. Whether you are stepping into your academic journey or advancing your expertise, BBCD College is your gateway to endless opportunities, personal growth, and lifelong friendships. Join us and be a part of a community that inspires, empowers, and transforms.
         </p>
 
@@ -78,7 +78,7 @@ const Home = () => {
 
         <section className="mt-10">
           <h3 className="text-3xl font-semibold mb-2 text-orange-500">Latest News</h3>
-          <ul className="list-disc list-inside  from-neutral-300 mb-5 text-sm flex flex-col gap-3 md:flex-row md:text-lg xl:gap-8">
+          <ul className="list-disc list-inside  from-neutral-300 mb-5 text-xl flex flex-col gap-3 md:flex-row md:text-xl xl:gap-8">
             <li>1. AI Workshop Series Kicks Off This Month!
 Our Department of Computer Science is organizing a hands-on workshop on Artificial Intelligence and Machine Learning starting August 20th. Students will get to work with real datasets and build intelligent models.</li>
             <li>2.New State-of-the-Art Robotics Lab Inaugurated
