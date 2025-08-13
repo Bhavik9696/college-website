@@ -25,7 +25,10 @@ export default function Login() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 dark:text-white">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 dark:text-white flex-col">
+      <div className="logo">
+        <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-adb4-61f7-a523-e34e9ccb080a/raw?se=2025-08-13T01%3A36%3A50Z&sp=r&sv=2024-08-04&sr=b&scid=80c210ba-2a76-5e2c-938f-699cd4f87676&skoid=24a7dec3-38fc-4904-b888-8abe0855c442&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-12T20%3A50%3A33Z&ske=2025-08-13T20%3A50%3A33Z&sks=b&skv=2024-08-04&sig=HiEq7Ql596WKr5FMtcad5ewTtXWw2DVf9yrwUmne2Tg%3D" alt="" width={200} className="animate-bounce"/>
+      </div>
       <form
         onSubmit={handleLogin}
         className="bg-blue-200 p-20 pt-16 w-full max-w-sm dark:bg-gray-900 dark:text-white dark:border-2 dark:border-gray-400 shadow-2xl shadow-blue-500/50 transition duration-[2000ms] hover:transform hover:scale-105  rounded-lg"

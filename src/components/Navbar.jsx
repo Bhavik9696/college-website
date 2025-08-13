@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <div>
-      <header className="p-5 bg-blue-700 text-white flex justify-between items-center md:pl-16 lg:p-3">
+      <header className="pl-5 pr-5 bg-blue-700 text-white flex justify-between items-center md:pl-16">
         <div className="flex items-center gap-4">
           <img src={logo1} alt="logo" width={70} className="rounded-full" />
           <h1 className="text-xl font-bold font-serif sm:text-2xl md:mt-2 md:text-3xl lg:mt-0">
@@ -79,7 +79,6 @@ function Navbar() {
       </button>
         </div>
 
-        {/* Mobile Hamburger */}
         <div className="lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
             {isOpen ? <FaTimes /> : <FaBars />}
@@ -87,7 +86,7 @@ function Navbar() {
         </div>
       </header>
 
-      {/* Mobile Menu */}
+
       {isOpen && (
         <div className="bg-blue-700 text-white flex flex-col gap-4 p-4 lg:hidden font-mono text-lg">
           <NavLink

@@ -38,10 +38,11 @@ function AddStudent() {
       
     <form 
       onSubmit={handleSubmit} 
-      className="max-w-md mx-auto  p-6 bg-blue-200 rounded-lg shadow-md flex flex-col gap-4 dark:bg-gray-900 border-2 border-gray-500 dark:text-black"
+      className="max-w-md mx-auto  p-6 bg-blue-200 rounded-lg flex flex-col gap-4 dark:bg-gray-900 border-2 border-gray-500 dark:text-black shadow-2xl shadow-blue-500/50 transition duration-[2000ms] hover:transform hover:scale-105 "
     >
       <h1 className='text-white bg-green-500'>{msg}</h1>
       <h1 className='text-white bg-red-600'>{err}</h1>
+      <h1 className='text-2xl text-orange-500 '>Add Student Details</h1>
       <input
         value={name}
         onChange={e => setName(e.target.value)}

@@ -67,13 +67,13 @@ function Signup() {
         Sign Up
       </button>
     </form>
-    <button className='bg-orange-600 p-2 rounded-xl font-bold text-lg'>
-  <NavLink to="/AddStudent">Add Student Details</NavLink>
-</button>
+    
+  <NavLink to="/AddStudent" className='bg-orange-600 p-2 rounded-xl font-bold text-lg'><button>Add Student Details</button></NavLink>
 
-<button className='bg-orange-600 p-2 rounded-xl font-bold text-lg'>
-  <NavLink to="/StudentList">View All Student Details</NavLink>
-</button>
+
+
+  <NavLink to="/StudentList" className='bg-purple-600 p-2 rounded-xl font-bold text-lg mt-9'><button >View All Student Details</button></NavLink>
+
     </div>
     
   );
