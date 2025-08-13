@@ -67,7 +67,7 @@ const ContactUS = () => {
             <input
               type="text"
               name="name"
-              className="w-full p-3 rounded  border border-gray-600 text-black bg-white-800 dark:bg-gray-800 "
+              className="w-full p-3 rounded  border border-gray-600 text-black bg-white-800 dark:bg-gray-800 dark:text-white"
               value={formData.name}
               onChange={handleChange}
               required
@@ -79,7 +79,7 @@ const ContactUS = () => {
             <input
               type="email"
               name="email"
-              className="w-full p-3 rounded  border border-gray-600 text-black bg-white-800 dark:bg-gray-800"
+              className="w-full p-3 rounded  border border-gray-600 text-black bg-white-800 dark:bg-gray-800 dark:text-white"
               value={formData.email}
               onChange={handleChange}
               required
@@ -90,7 +90,7 @@ const ContactUS = () => {
             <label className="block mb-1">Subject *</label>
             <select
               name="subject"
-              className="w-full p-3 rounded  border border-gray-600 text-black bg-white-800 dark:bg-gray-800"
+              className="w-full p-3 rounded  border border-gray-600 text-black bg-white-800 dark:bg-gray-800 dark:text-white"
               value={formData.subject}
               onChange={handleChange}
               required
@@ -106,7 +106,7 @@ const ContactUS = () => {
             <label className="block mb-1">Message *</label>
             <textarea
               name="message"
-              className="w-full p-3 h-32 rounded  border border-gray-600 text-black bg-white-800 dark:bg-gray-800"
+              className="w-full p-3 h-32 rounded  border border-gray-600 text-black bg-white-800 dark:bg-gray-800 dark:text-white"
               value={formData.message}
               onChange={handleChange}
               required
